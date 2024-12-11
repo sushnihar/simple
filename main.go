@@ -1,13 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
+	var x [5]int
+	for i := 0; i <= 2; i++ {
+		fmt.Println("Enter the value of x[", i, "]")
+		if x[0] == x[4] && x[2] == x[3] {
+			fmt.Println(fmt.Sprintf("if %d == %d && %d == %d", x[0], x[4], x[2], x[3]))
+		}
 
-	a, b := 0, 1
-	for i := 0; i < 10; i++ {
-		fmt.Println(a)
-		a, b = b, a+b
 	}
 }
 
