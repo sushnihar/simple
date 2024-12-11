@@ -4,22 +4,10 @@ import "fmt"
 
 func main() {
 
-	fibonacciIterative(10)
-
-}
-func fibonacciIterative(n int) {
-	n1, n2 := 0, 1
-	if n >= 1 {
-		fmt.Println(n1)
-	}
-	if n >= 2 {
-		fmt.Println(n2)
-	}
-	for i := 3; i <= n; i++ {
-		n3 := n1 + n2
-		fmt.Println(n3)
-		n1 = n2
-		n2 = n3
+	a, b := 0, 1
+	for i := 0; i < 10; i++ {
+		fmt.Println(a)
+		a, b = b, a+b
 	}
 }
 
